@@ -158,7 +158,7 @@ class PrimaryPublishHook(Hook):
         progress_cb(10.0, "Saving the scene")
         self.parent.log_debug("Saving the scene...")
         cmds.file(rename=latest_work_path)
-        cmds.file(save=True, force=True, type = 'mayaBinary')
+        cmds.file(save=True, force=True)
         
         # copy the file:
         progress_cb(50.0, "Copying the file")
